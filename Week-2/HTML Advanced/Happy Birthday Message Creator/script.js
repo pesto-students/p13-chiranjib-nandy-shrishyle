@@ -1,6 +1,6 @@
 let emailInputField = document.getElementById("message");
 let userInputEmail = emailInputField.value;
-let regex = new RegExp([a - zA - Z0 - 9 - _.] + @[a - zA - Z0 - 9 -] + (?:.[a - zA - Z0 - 9 -] +) *);
+// let regex = new RegExp([a - zA - Z0 - 9 - _.] + @[a - zA - Z0 - 9 -] + (?:.[a - zA - Z0 - 9 -] +) *);
 
 let validateEmail = () => {
     let result = regex.test(userInputEmail);
