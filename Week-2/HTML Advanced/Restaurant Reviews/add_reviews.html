@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+    <title>Restaurant Reviews</title>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant Reviews</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Details</a></li>
+          <li><a href="add_reviews.html">Add Reviews</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form action="#">
+          <h2>Add Review</h2>
+          <p>
+            <label for="reviewer_name">Name:</label>
+            <input type="text" name="reviewer_name" />
+          </p>
+          <p>
+            <label for="restuarant_name">Restaurant:</label>
+            <select name="restuarant_name" id="restuarant_name">
+              <option value="main_street_cafe">Main street Cafe</option>
+              <option value="greek_house">Greek House</option>
+            </select>
+          </p>
+          <p>
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date" />
+          </p>
+
+          <p>
+            <label for="rating">Rating</label>
+            <input type="number" name="rating" id="rating" min="1" max="5" />
+          </p>
+          <p>
+            <label for="details">Details:</label>
+            <textarea name="details" id="details" cols="30" rows="5"></textarea>
+          </p>
+          <p>
+            <button type="submit" value="submit">Submit</button>
+          </p>
+        </form>
+      </section>
+    </main>
+    <footer>@ Copyright Restaurant Reviews</footer>
+  </body>
+</html>
