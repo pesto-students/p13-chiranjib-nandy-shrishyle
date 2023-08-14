@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Happy Birthday Message Creator</title>
+  </head>
+  <body>
+    <h1>Happy Birthday Message Creator</h1>
+    <form>
+      <div class="container1">
+        <div class="left">
+          <label for="message">Message:</label>
+          <label for="email">Email Address:</label>
+          <label for="date">Date to Send:</label>
+          <label for="color">Message Color:</label>
+          <label for="blinks">No of Blinks:</label>
+          <label for="volume">Music Volume</label>
+        </div>
+        <div class="right">
+          <input type="text" name="message" id="message" />
+          <!-- Regex part of the assignment is not working. Perhaps the regex specified in the assignment is incorrect. -->
+          <input type="email" name="email" id="email" />
+          <input type="date" name="date" id="date" />
+          <input type="color" name="color" id="color" />
+          <input type="number" name="blinks" id="blinks" value="0" min="0" max="10"/>
+          <input type="range" name="volume" id="volume" value="20" min="0" max="50"/>
+        </div>
+      </div>
+      <div class="container2">
+        <button type="submit" value="submit">Send Birthday Message</button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

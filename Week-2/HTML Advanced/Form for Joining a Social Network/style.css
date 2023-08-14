@@ -1,0 +1,29 @@
+div.left {
+  display: flex;
+  flex-direction: column;
+}
+
+div.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.left {
+    width: 150px;
+}
+
+
+.subcontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.container div {
+    margin-top: 5px;
+}
