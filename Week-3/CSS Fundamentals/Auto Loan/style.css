@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+header > p {
+  font-size: 16px;
+  color: #444444;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.purchase-offer {
+  height: auto;
+  width: 400px;
+  border: 1px solid;
+  margin: 10px;
+  border: 1px solid #cccccc;
+}
+
+.offer-title {
+  height: 2rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #00b3b3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  background-color: #fafafa;
+  padding: 1rem;
+}
+
+.feature {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  margin: 3px;
+}
+
+.feature-name,
+.feature-value {
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.feature-name {
+  width: 70%;
+}
+
+.feature-value {
+  width: 30%;
+  margin-left: 1.5rem;
+}
+
+.total-amount {
+  color: rgb(175, 73, 175);
+  font-weight: bold;
+}
