@@ -1,0 +1,29 @@
+header {
+  color: black;
+  font-size: 35px;
+}
+
+body {
+}
+
+h1 {
+  font-family: "Calibri", "Helvetica", sans-serif;
+  font-size: 25px;
+  background-color: rgb(254, 0, 2);
+
+  padding: 6px 6px 6px 8px;
+  color: white;
+}
+
+h2 {
+  color: lightgrey;
+  font-family: "Calibri", "Helvetica", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+h1,
+h2,
+p {
+  margin-left: 5px;
+}
