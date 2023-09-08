@@ -9,6 +9,7 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -17,73 +18,87 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="container">
+    <!-- Header -->
     <header>
       <h1 class="navbar-brand">Mediterranian Vacations</h1>
     </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#featured">Featured Packages</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#exotic">Exotic Vacations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#historic">Historic Locations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact Us</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="benefits">
-      <div>
-        <div class="benefits-inner-container">
-          <div>
+
+    <!-- Navigation Bar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-md bg-body-secondary row pb-0">
+        <ul class="navbar">
+          <li class="nav-item col-md-3">
+            <a class="nav-link" href="#featured">Featured Packages</a>
+          </li>
+          <li class="nav-item col-md-3">
+            <a class="nav-link" href="#exotic">Exotic Vacations</a>
+          </li>
+          <li class="nav-item col-md-3">
+            <a class="nav-link" href="#historic">Historic Locations</a>
+          </li>
+          <li class="nav-item col-md-3">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="container">
+      <div id="benefits">
+        <div class="row">
+          <div class="benefits-inner-container col-sm-4">
+            <!-- <div>
             <img src="checkmark.png" alt="checkmark" />
+          </div> -->
+            <div class="benefit">
+              <strong>Affordable!</strong> Our vacation packages give you the
+              most bang for your buck.
+            </div>
           </div>
-          <div class="benefit">
-            <strong>Affordable!</strong> Our vacation packages give you the most
-            bang for your buck.
-          </div>
-        </div>
-        <div class="benefits-inner-container">
-          <div>
+          <div class="benefits-inner-container col-sm-4">
+            <!-- <div>
             <img src="checkmark.png" alt="checkmark" />
+          </div> -->
+            <div class="benefit">
+              <strong>Quality!</strong> We use only the finest lodgings and
+              qualified tour guides.
+            </div>
           </div>
-          <div class="benefit">
-            <strong>Quality!</strong> We use only the finest lodgings and
-            qualified tour guides.
-          </div>
-        </div>
-        <div class="benefits-inner-container">
-          <div>
+          <div class="benefits-inner-container col-sm-4">
+            <!-- <div>
             <img src="checkmark.png" alt="checkmark" />
-          </div>
-          <div class="benefit">
-            <strong>Cancel Anytime!</strong> You may cancel your trip at any
-            time for a full refund.
+          </div> -->
+            <div class="benefit">
+              <strong>Cancel Anytime!</strong> You may cancel your trip at any
+              time for a full refund.
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Main Section -->
     <main>
       <section id="featured">
         <h2>Featured Packages</h2>
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
-            <div>
-              <img src="egypt_600.jpg" alt="Great Sphyinx and pyramid" />
+            <div class="col-md-6">
+              <img
+                src="https://epuja.co.in/upload/Rameshwaram-Ramalingeshwarar-Ramanathaswamy-Temple41.jpg"
+                alt="Rameshwaram Temple"
+                class="rounded"
+                height="300"
+                width="auto"
+              />
             </div>
-            <div>
-              <h3>Egpyt</h3>
+            <div class="col-md-6 col-sm-12 col-xl-4">
+              <h3>Rameshwaram Temple</h3>
               <p>
-                Egpyt is a land of enduring beauty and rich culture. Explore the
-                capital city of <strong>Cairo</strong>, the
-                <strong>Great Pyramids of Giza</strong>, and the iconic
-                <strong>Great Sphinx</strong>!
+                <strong>Rameshwar Temple </strong> is the place where Lord Ram
+                worshipped Lord Shiva
               </p>
               <p>
                 Packages include airfare, lodging, and several guided tours!
@@ -96,17 +111,24 @@
       <section id="exotic">
         <h2>Exotic Vacations</h2>
         <div>
-          <div>
-            <div>
-              <img src="greece_600.jpg" alt="Arial view of Santorini" />
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://www.abhibus.com/blog/wp-content/uploads/2023/04/Madurai-Meenakshi-Temple-History-Timings-How-to-Reach.jpg"
+                alt="Madhurai Meenakshi Temple"
+                class="rounded"
+                height="300"
+                width="auto"
+              />
             </div>
-            <div>
+            <div class="col-md-6 col-sm-12 col-xl-4">
               <div>
-                <h3>Greece</h3>
+                <h3>Meenakshi Temple</h3>
                 <p>
-                  Enjoy the scenic, peaceful Greek island of
-                  <strong>Santorini</strong>. Take a cruise, soak in the sun,
-                  and explore the idyllic villages that sit atop the cliffs!
+                  Enjoy the Magnificient
+                  <strong>Madhuri Meenakshi Temple</strong>. Seek Devine
+                  Blessings from Godess Meenakshi and witness the Centuries old
+                  Marvellous Temple Construction!
                 </p>
                 <p>Packages include airfare, overnight cruises, and lodging!</p>
               </div>
@@ -118,19 +140,24 @@
       <section id="historic">
         <h2>Historic Locations</h2>
         <div>
-          <div>
-            <div>
-              <img src="israel_600.jpg" alt="Jerusalem city scape" />
+          <div class="row">
+            <div class="col-md-6">
+              <img
+                src="https://www.incredibleindia.org/content/dam/incredibleindia/images/places/gokarna/gokarna-murudeshwar-0.jpg"
+                alt="Murudeshwara Temple"
+                class="rounded"
+                height="300"
+                width="auto"
+              />
             </div>
-            <div>
+            <div class="col-md-6 col-sm-12 col-xl-4">
               <div>
-                <h3>Israel</h3>
+                <h3>Murudeshwara Temple</h3>
                 <p>
-                  Explore Israel's holy city of <strong>Jerusalem</strong>.
-                  Visit the <strong>Dome of the Rock</strong>, the
-                  <strong>Western Wall</strong>, the
-                  <strong>Church of the Holy Sepulchre</strong>, and other
-                  iconic sites!
+                  Explore Karnataka's holy city of <strong>Murudeshwar</strong>.
+                  Visit the <strong>Gopuram</strong>, the
+                  <strong>Largest Shiva Statue</strong>, the
+                  <strong>Senere Beach</strong>, and other iconic sites!
                 </p>
                 <p>
                   Packages include airfare, lodging, and several guided tours!
@@ -157,6 +184,9 @@
           >
             Send a message
           </button>
+        </p>
+        <p id="conf-alert" class="alert alert-success collapse">
+          Thank You! We will Contact you Soon!!!
         </p>
 
         <!-- Add Bootstrap Alert here -->
@@ -243,5 +273,7 @@
       </p>
       <p>&copy; 2022 Mediterranian Vacations</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
