@@ -23,11 +23,7 @@ function isStrongPassword(passwordInput) {
   }
 
   //If Block to check if all set conditions for password strength are met.
-  if (
-    is8Characters &&
-    isDoesNotContainPasswordString &&
-    isContainsOneUpperCharacter
-  ) {
+  if (is8Characters && isDoesNotContainPasswordString && isContainsOneUpperCharacter) {
     console.log("Password is Strong");
   } else {
     console.log("Password is NOT Strong");

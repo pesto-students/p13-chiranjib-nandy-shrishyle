@@ -8,8 +8,8 @@ function divideArray(arg) {
       oddNums.push(item);
     }
   });
-    console.log(`Even Number Array : ${evenNums.sort()}`);
-    console.log(`Odd Number Array : ${oddNums.sort()}`);
+  console.log(`Even Number Array : ${evenNums.sort()}`);
+  console.log(`Odd Number Array : ${oddNums.sort()}`);
 }
 
 divideArray([4, 2, 9, 1, 8]);
