@@ -3,12 +3,12 @@ function isStrongPassword(passwordInput) {
   let isDoesNotContainPasswordString = false;
   let isContainsOneUpperCharacter = false;
 
-  //Check if the password length is more than 8 characters
+  //Check if the password length is more than 8 characters.
   if (passwordInput.length >= 8) {
     is8Characters = true;
   }
 
-  //Check if the password includes the string "password"
+  //Check if the password includes the string "password".
   if (passwordInput.includes("password")) {
     isDoesNotContainPasswordString = false;
   } else {
@@ -16,13 +16,13 @@ function isStrongPassword(passwordInput) {
   }
 
   //Check if the entered password contains atleast one Capital Character.
-  //   if (!/[a-z]/.test(passwordInput) && /[A-Z]/.test(passwordInput)) {
   if (/[A-Z]/.test(passwordInput)) {
     isContainsOneUpperCharacter = true;
   } else {
     isContainsOneUpperCharacter = false;
   }
 
+  //If Block to check if all set conditions for password strength are met.
   if (
     is8Characters &&
     isDoesNotContainPasswordString &&
