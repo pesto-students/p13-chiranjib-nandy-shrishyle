@@ -1,27 +1,31 @@
 let firstValues = [];
 let secondValues = [];
 
-function counter() {
+let count = 0;
+let firstCounter = function counter() {
   return function () {
-    let count = 0;
     count++;
     firstValues.push(count);
   };
-}
+};
 
-let firstCounter = counter();
+let secondCounter = function counter() {
+  let count = 0;
+  return function () {
+    count++;
+    secondValues.push(count);
+  };
+};
 
-let secondCounter = counter();
+firstCounter()();
+firstCounter()();
+firstCounter()();
+firstCounter()();
+firstCounter()();
 
-firstCounter();
-firstCounter();
-firstCounter();
-firstCounter();
-firstCounter();
-
-secondCounter();
-secondCounter();
-secondCounter();
+secondCounter()();
+secondCounter()();
+secondCounter()();
 
 console.log(firstValues);
 console.log(secondValues);
